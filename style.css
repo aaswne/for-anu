@@ -102,7 +102,7 @@ b{ font-weight: 700; }
 .topbar__inner{
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:space-evenly;
   gap: 12px;
   padding: 10px 0;
 }

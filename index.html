@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#ffd6e7" />
+  <title>Aswin ✦ Anu — Valentine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#message">Skip to content</a>
+
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <header class="topbar" id="home">
+    <div class="wrap topbar__inner">
+      <div class="brand">
+        <span class="brand__dot" aria-hidden="true"></span>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#message" class="nav__link">Message</a>
+        <a href="#photos" class="nav__link">Photos</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <div class="countdown" aria-live="polite">
+          <span class="countdown__label">Countdown</span>
+          <span class="countdown__value" id="countdown">—</span>
+        </div>
+
+        <button class="toggle" id="modeToggle" type="button" aria-pressed="false">
+          <span class="toggle__icon" aria-hidden="true">🌙</span>
+          <span class="toggle__text">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="card" id="valentineCard">
+          <div class="card__badge">
+            <span aria-hidden="true">💌</span>
+          </div>
+
+          <h1 class="title">
+            <span class="title__name">Chotta</span>
+            will you be my Valentine? <span aria-hidden="true">💗</span>
+          </h1>
+
+
+          <p class="prankline" id="prankLine" aria-live="polite">
+          </p>
+
+          <div class="btnRow" id="btnRow">
+            <button class="btn btn--primary" id="yesBtn" type="button">
+              YES <span aria-hidden="true">💖</span>
+            </button>
+
+            <button class="btn btn--ghost" id="noBtn" type="button">
+              NO <span aria-hidden="true">🙈</span>
+            </button>
+          </div>
+
+          <div class="cry" id="cryEmojis" aria-hidden="true"></div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- YES SECTION -->
+    <section class="section" id="message">
+      <div class="wrap">
+        <div class="panel">
+          <div class="panel__left">
+            <h2 class="h2">mmwaaah <span aria-hidden="true">💕</span></h2>
+            <p class="lead">Happy Valentine’s Day, <b>anuo</b>!</p>
+            <p class="muted">From <b>Aswin</b> — made minimal, made special.</p>
+
+            <div class="ctaRow">
+              <a class="btn btn--soft" href="#photos" id="seePhotosBtn">
+                See our photos <span aria-hidden="true">📸</span>
+              </a>
+
+              <button class="btn btn--soft" id="openVideoBtn" type="button">
+                Watch our video <span aria-hidden="true">🎥</span>
+              </button>
+
+              <a class="btn btn--primary" id="waBtn"
+                 href="https://wa.me/918089459939?text=Hi%20Anu%20%F0%9F%92%97%20Will%20you%20be%20my%20Valentine%3F%20%F0%9F%92%96%0A%0A%E2%80%94%20Aswin"
+                 target="_blank" rel="noopener">
+                Talk to me on WhatsApp <span aria-hidden="true">💬</span>
+              </a>
+
+              <a class="btn btn--ghost" href="tel:+918089459939">
+                Call me <span aria-hidden="true">☎️</span>
+              </a>
+            </div>
+
+            <div class="miniNote">
+              <span class="miniNote__dot" aria-hidden="true"></span>
+            </div>
+          </div>
+
+         <div class="panel__right">
+  <div class="quoteCard">
+    <p class="quote">
+      “I will always be there for you, forever.”
+    </p>
+    <p class="quoteBy">— For Anu</p>
+  </div>
+
+  <div class="heartField">
+    <span>💗</span>
+    <span>💞</span>
+    <span>💓</span>
+    <span>💘</span>
+    <span>💖</span>
+  </div>
+
+  <div class="chips" aria-label="Little things">
+    <span class="chip">soft</span>
+    <span class="chip">sweet</span>
+    <span class="chip">us</span>
+    <span class="chip">always</span>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOS + SPOTIFY -->
+    <section class="section" id="photos">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Our Photos</h2>
+            <p class="muted">Tap a photo to open it. Tap outside to close.</p>
+          </div>
+
+          <!-- stays, but will auto-trigger on section enter -->
+          <button class="btn btn--soft" id="spotifyReveal" type="button">
+            Tap to play  <span aria-hidden="true">🎶</span>
+          </button>
+        </div>
+
+        <!-- Spotify hidden until reveal; now auto-reveals when section enters -->
+        <div class="spotify" id="spotifyWrap" hidden>
+          <iframe
+            style="border-radius:16px"
+            src="https://open.spotify.com/embed/track/1hlbywc8Jhl1FFqJxAMabE?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            title="Our Song on Spotify"
+          ></iframe>
+
+          
+        </div>
+
+        <!-- IMPORTANT: IMG TAGS DIRECT -->
+        <div class="grid" id="photoGrid" aria-label="Photo grid">
+          <button class="ph" type="button" aria-label="Open photo 1"><img src="img/1.JPG" alt="Aswin & Anu photo 1" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 2"><img src="img/2.JPG" alt="Aswin & Anu photo 2" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 3"><img src="img/3.JPG" alt="Aswin & Anu photo 3" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 4"><img src="img/4.JPG" alt="Aswin & Anu photo 4" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 5"><img src="img/5.jpeg" alt="Aswin & Anu photo 5" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 6"><img src="img/6.JPG" alt="Aswin & Anu photo 6" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 7"><img src="img/7.JPG" alt="Aswin & Anu photo 7" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 8"><img src="img/8.JPG" alt="Aswin & Anu photo 8" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 9"><img src="img/9.JPG" alt="Aswin & Anu photo 9" loading="lazy" /></button>
+          <button class="ph" type="button" aria-label="Open photo 10"><img src="img/10.JPG" alt="Aswin & Anu photo 10" loading="lazy" /></button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <p class="muted">Made with <span aria-hidden="true">💗</span> for my chotta</p>
+        <a class="muted link" href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Confetti hearts (no canvas) -->
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" id="lbBackdrop"></div>
+    <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <button class="lightbox__close" id="lbClose" type="button" aria-label="Close (Esc)">✕</button>
+      <img class="lightbox__img" id="lbImg" alt="Selected photo" />
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="videobox" id="videobox" aria-hidden="true">
+    <div class="videobox__backdrop" id="vbBackdrop"></div>
+    <div class="videobox__dialog" role="dialog" aria-modal="true" aria-label="Video viewer">
+      <div class="videobox__top">
+        <div class="videobox__title">Our Video 🎥</div>
+        <div class="videobox__actions">
+          <button class="btn btn--soft" id="vbGoBack" type="button">Go back</button>
+          <button class="btn btn--ghost" id="vbClose" type="button" aria-label="Close video">✕</button>
+        </div>
+      </div>
+
+      <video id="ourVideo" class="videobox__video" playsinline preload="metadata">
+        <source src="video/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="videobox__bottom">
+        <button class="btn btn--primary" id="vbPlay" type="button">Play ▶</button>
+        <button class="btn btn--ghost" id="vbPause" type="button">Pause ⏸</button>
+      </div>
+    </div>
+  </div>
+<!-- Roaming Heart (moves around whole page) -->
+<button id="roamHeart" class="roamHeart" type="button" aria-label="Catch the heart">💗</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
